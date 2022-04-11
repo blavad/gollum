@@ -66,7 +66,7 @@ If you are connected to another network, you will first need to access the VPN o
 
 ```sh
 sudo openconnect https://sslvpn.cisr.fr
-ssh username@gollum.citi.insa-lyon.fr
+ssh [USERNAME]@gollum.citi.insa-lyon.fr
 ```
 
 
@@ -96,5 +96,5 @@ cat /etc/group
 sudo groupadd [GROUPNAME] 
 
 # Add a user in a group (useful to add users in docker group)
-usermod -a -G [GROUPNAME] [USERNAME]
+sudo usermod -a -G [GROUPNAME] [USERNAME]
 ```
